@@ -1,0 +1,23 @@
+meta {
+  name: OTP-verify
+  type: http
+  seq: 9
+}
+
+post {
+  url: http:localhost:3000/otp/verify
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "phone" : "987867",
+    "otp" : "198316"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

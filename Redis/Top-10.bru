@@ -1,0 +1,15 @@
+meta {
+  name: Top-10
+  type: http
+  seq: 20
+}
+
+get {
+  url: http://localhost:3000/leaderboard
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

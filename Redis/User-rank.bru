@@ -1,0 +1,16 @@
+meta {
+  name: User-rank
+  type: http
+  seq: 21
+}
+
+get {
+  url: http://localhost:3000/leaderboard/4/rank
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

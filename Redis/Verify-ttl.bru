@@ -1,0 +1,16 @@
+meta {
+  name: Verify-ttl
+  type: http
+  seq: 10
+}
+
+get {
+  url: http:localhost:3000/otp/987867/ttl
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

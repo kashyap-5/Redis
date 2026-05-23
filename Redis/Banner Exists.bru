@@ -1,0 +1,16 @@
+meta {
+  name: Banner Exists
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:3000/banner/exists
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Verify using Hash
+  type: http
+  seq: 14
+}
+
+get {
+  url: http://localhost:3000/user/123/hash
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

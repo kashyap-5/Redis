@@ -1,0 +1,23 @@
+meta {
+  name: BullMQ
+  type: http
+  seq: 16
+}
+
+post {
+  url: http://localhost:3000/welcome-email
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "to": "poonam@gmail.com",
+    "subject" : "Welcome"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

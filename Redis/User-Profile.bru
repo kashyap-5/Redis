@@ -1,0 +1,25 @@
+meta {
+  name: User-Profile
+  type: http
+  seq: 11
+}
+
+post {
+  url: http://localhost:3000/user/123/json
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name":"Poonam",
+    "age": 12,
+    "email": "poonam@gmail.com",
+    "phone": "987867"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

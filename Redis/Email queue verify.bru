@@ -1,0 +1,15 @@
+meta {
+  name: Email queue verify
+  type: http
+  seq: 15
+}
+
+get {
+  url: http://localhost:3000/emails/process-one
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

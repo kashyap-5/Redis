@@ -1,0 +1,22 @@
+meta {
+  name: site-banner
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/banner
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "message" : "Welcome to our site using redis!!"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
